@@ -11,6 +11,7 @@ export default function BookOnlinePage() {
     eventType: "",
     eventDate: "",
     eventTime: "",
+    venueType: "",
     location: "",
     balloonType: "",
     additionalInfo: "",
@@ -40,6 +41,7 @@ export default function BookOnlinePage() {
       formDataToSend.append('eventType', formData.eventType);
       formDataToSend.append('eventDate', formData.eventDate);
       formDataToSend.append('eventTime', formData.eventTime);
+      formDataToSend.append('venueType', formData.venueType);
       formDataToSend.append('location', formData.location);
       formDataToSend.append('balloonType', formData.balloonType);
       formDataToSend.append('additionalInfo', formData.additionalInfo);
@@ -72,6 +74,7 @@ export default function BookOnlinePage() {
           eventType: "",
           eventDate: "",
           eventTime: "",
+          venueType: "",
           location: "",
           balloonType: "",
           additionalInfo: "",
@@ -232,6 +235,24 @@ export default function BookOnlinePage() {
                   onChange={handleChange}
                   className="w-full border border-gray-300 bg-[#FFD6E0] p-2 md:p-3 text-black text-sm"
                 />
+              </div>
+
+              <div>
+                <label htmlFor="venueType" className="mb-2 block text-xs md:text-sm font-semibold">
+                  Indoor or Outdoor? *
+                </label>
+                <select
+                  id="venueType"
+                  name="venueType"
+                  required
+                  value={formData.venueType}
+                  onChange={handleChange}
+                  className="w-full border border-gray-300 bg-[#FFD6E0] p-2 md:p-3 text-black text-sm"
+                >
+                  <option value="">Select venue type</option>
+                  <option value="indoor">Indoor</option>
+                  <option value="outdoor">Outdoor</option>
+                </select>
               </div>
             </div>
 

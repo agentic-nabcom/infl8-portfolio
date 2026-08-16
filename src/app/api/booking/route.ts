@@ -20,6 +20,7 @@ interface BookingFormData {
   eventType: string;
   eventDate: string;
   eventTime: string;
+  venueType: string;
   location: string;
   balloonType: string;
   additionalInfo: string;
@@ -36,6 +37,11 @@ function createBookingEmail(data: BookingFormData): string {
     'anniversary': 'Anniversary',
     'holiday': 'Holiday Party',
     'other': 'Other Event'
+  };
+
+  const venueTypeMap: Record<string, string> = {
+    'indoor': 'Indoor',
+    'outdoor': 'Outdoor'
   };
 
   const balloonTypeMap: Record<string, string> = {
@@ -172,6 +178,10 @@ function createBookingEmail(data: BookingFormData): string {
             ${data.eventTime}
           </div>
           <div class="info-item">
+            <span class="info-label">Venue Type:</span>
+            ${venueTypeMap[data.venueType] || data.venueType}
+          </div>
+          <div class="info-item">
             <span class="info-label">Location:</span>
             ${data.location}
           </div>
@@ -213,6 +223,7 @@ export async function POST(request: NextRequest) {
     const eventType = formData.get('eventType') as string;
     const eventDate = formData.get('eventDate') as string;
     const eventTime = formData.get('eventTime') as string;
+    const venueType = formData.get('venueType') as string;
     const location = formData.get('location') as string;
     const balloonType = formData.get('balloonType') as string;
     const additionalInfo = formData.get('additionalInfo') as string;
@@ -226,6 +237,7 @@ export async function POST(request: NextRequest) {
       eventType: eventType || '',
       eventDate: eventDate || '',
       eventTime: eventTime || '',
+      venueType: venueType || '',
       location: location || '',
       balloonType: balloonType || '',
       additionalInfo: additionalInfo || '',
@@ -235,7 +247,7 @@ export async function POST(request: NextRequest) {
     // Validate required fields
     if (!bookingData.firstName || !bookingData.lastName || !bookingData.email || 
         !bookingData.phone || !bookingData.eventType || !bookingData.eventDate || 
-        !bookingData.eventTime || !bookingData.location || !bookingData.balloonType) {
+        !bookingData.eventTime || !bookingData.venueType || !bookingData.location || !bookingData.balloonType) {
       return NextResponse.json(
         { error: 'Please fill in all required fields' },
         { status: 400 }

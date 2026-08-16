@@ -6,7 +6,7 @@ const balloonItems = [
     includes: [
       "1 Custom Backdrop (Metal Frame)",
       "1 Custom Sign (Vinyl)",
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/arch-with-backdrop.png"
   },
@@ -15,14 +15,14 @@ const balloonItems = [
     includes: [
       "2 Custom Backdrops (Metal Frame)",
       "1 Custom Sign (Vinyl)",
-      "1.5 Organic Balloon Garlands (Balloon sizes 5\"-24\")"
+      "1.5 Organic Balloon Garlands (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/double-arch-with-backdrops.png"
   },
   {
     name: "Half Square Arch",
     includes: [
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     addOns: "Square Frame available for rental",
     image: "/balloon-menu-images/half-square-arch.png"
@@ -30,7 +30,7 @@ const balloonItems = [
   {
     name: "Square Arch",
     includes: [
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     addOns: "Square Frame available for rental",
     image: "/balloon-menu-images/square-arch.png"
@@ -39,7 +39,7 @@ const balloonItems = [
     name: "Full Hoop",
     includes: [
       "1 Metal Hoop Frame",
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/full-hoop.png"
   },
@@ -47,7 +47,7 @@ const balloonItems = [
     name: "Custom Hoop",
     includes: [
       "1 Metal Hoop Frame",
-      "1.5 Organic Balloon Garlands (Balloon sizes 5\"-24\")"
+      "1.5 Organic Balloon Garlands (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/custom-hoop.png"
   },
@@ -55,7 +55,7 @@ const balloonItems = [
     name: "Organic Arch",
     includes: [
       "1 Metal Arch Frame",
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/organic-arch.png"
   },
@@ -68,17 +68,24 @@ const balloonItems = [
     image: "/balloon-menu-images/classic-arch.png"
   },
   {
+    name: "Marquee Letters/Numbers with Balloon Garlands",
+    includes: [
+      "Custom Marquee Letters/Numbers",
+      "Balloon garlands on both sides or all around"
+    ]
+  },
+  {
     name: "Stand Alone Garlands",
     includes: [
       "1 Metal Pole",
-      "1 Organic Balloon Garland (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Garland (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/stand-alone-garlands.png"
   },
   {
     name: "Balloon Wall",
     includes: [
-      "1 Organic Balloon Wall (Balloon sizes 5\"-24\")"
+      "1 Organic Balloon Wall (Balloon sizes 5\"-18\")"
     ],
     image: "/balloon-menu-images/balloon-wall.png"
   },
@@ -119,7 +126,7 @@ const balloonItems = [
 
 const addOns = [
   "Metallic Balloons",
-  "Large Balloons size 18-36\"",
+  "Large Balloons size 24-36\"",
   "Foil Orbz",
   "Foil Starbursts",
   "Foil Numbers/Letters",
