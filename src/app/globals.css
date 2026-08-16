@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --font-syne: var(--font-syne);
+  --font-kodchasan: var(--font-kodchasan);
+  --font-dancing-script: var(--font-dancing-script);
+}
+
+@theme {
+  --color-pink-bg: #FFD6E0;
+  --color-pink-light: #FFF5F9;
+  --color-pink-accent: #D96E95;
+  --color-purple-accent: #78396D;
+}
+
+body {
+  font-family: var(--font-kodchasan), sans-serif;
+}
+
+.font-syne {
+  font-family: var(--font-syne), sans-serif;
+}
+
+.font-kodchasan {
+  font-family: var(--font-kodchasan), serif;
+}
+
+.font-dancing-script {
+  font-family: var(--font-dancing-script), cursive;
+}
