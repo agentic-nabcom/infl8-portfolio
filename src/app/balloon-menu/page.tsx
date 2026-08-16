@@ -73,7 +73,7 @@ const balloonItems = [
       "Custom Marquee Letters/Numbers",
       "Balloon garlands on both sides or all around"
     ],
-    image: "/balloon-menu-images/marquee-letters-garlands.jpg"
+    image: "/balloon-menu-images/marquee-letters-garlands.png"
   },
   {
     name: "Stand Alone Garlands",
